@@ -9,10 +9,17 @@ function fetchData() {
             return response.json();
         }
     }).then(json => {
+        
         data = json;
+        
     });
 }
+
 
 function add(recipe) {
     data.unshift(recipe);
 }
+
+
+export {fetchData};
+
