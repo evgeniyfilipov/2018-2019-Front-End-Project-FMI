@@ -17,9 +17,9 @@
         </ul>
     </nav>
     <div class="form-title">
-        <h1 class="recipe-title">Publish your own recipe</h1>
+        <h1 class="title">Publish your own recipe</h1>
     </div>
-    <form name="publishRecipeForm" onsubmit="return validate()" method="post" class="recipe-form">
+    <form name="publishRecipeForm" onsubmit="return add()" method="post" class="recipe-form">
         <label for="dish" class="recipe-input">Dish</label>
         <input name="dish" id="dish" type="text" class="recipe-input"><br>
 
@@ -33,7 +33,7 @@
         <textarea name="instructions" id="instructions" rows="20" cols="30" class="recipe-input"></textarea><br>
 
         <label for="photo">Photo</label>
-        <input type="file" name="photo" id="photo">
+        <input type="file" name="photo" id="photo" class="recipe-upload">
         
         <button type="submit" class="recipe-submit">Publish</button>
     </form>

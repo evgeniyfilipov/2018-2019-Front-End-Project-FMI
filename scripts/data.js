@@ -11,16 +11,23 @@ function fetchData() {
         }
     }).then(json => {        
         restData = json;
-        console.log(restData);
     });
 }
 
-export {fetchData};
-
-function add(recipe) {
+function add() {
     if (validate()) {
+        let recipe = {
+            recipe: {
+                dish: document.publishRecipeForm.dish.value,
+                cook: document.publishRecipeForm.cook.value,
+                ingredients: document.publishRecipeForm.ingredients.value,
+                instructions: document.publishRecipeForm.instructions.value
+            }
+        };
         localData.unshift(recipe);
-        window.location.replace('file:///D:/FMI/Front%20End/finalproject/2018-2019-Front-End-Project-FMI/recipes.html');
+        return true;
+    } else {
+        return false;
     }
 }
 

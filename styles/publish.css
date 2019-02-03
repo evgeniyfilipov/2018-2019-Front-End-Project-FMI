@@ -1,5 +1,6 @@
 .recipe-form {
     padding: 2rem;
+    position: absolute;
 }
 
 .recipe-input {
@@ -7,5 +8,23 @@
 }
 
 .recipe-submit {
-    
+    background-color: #00AB9A;
+    border: none;
+    color: #313131;
+    font-size: 32px;
+    margin: 1rem;
+}
+
+.recipe-submit:hover {
+    background-color: #00D4B8;
+}
+
+.recipe-upload {
+    background-color: #00AB9A;
+    border: none;
+    color: #313131;
+}
+
+textarea {
+    resize: none;
 }
