@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #00AB9A;
   }
   
   li {
@@ -22,13 +22,14 @@ ul {
     background-color: #111;
   }
 
+  
 
-  .footer {
+  footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: #00AB9A;
     color: white;
     text-align: center;
  }
