@@ -3,7 +3,7 @@
 
 <head>
     <title>Dimitar & Evgeniy - Publish a Recipe</title>
-    <script src="scripts/data.js"></script>
+    <script src="./scripts/data.js"></script>
     <link rel="stylesheet" type="text/css" href="../2018-2019-Front-End-Project-FMI/styles/index.css">
     <link rel="stylesheet" type="text/css" href="../2018-2019-Front-End-Project-FMI/styles/publish.css">
 </head>
@@ -13,11 +13,29 @@
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./recipes.html">Recipes</a></li>
-            <li><a href="#">Publish a Recipe</a></li>
+            <li><a href="#" class="active">Publish a Recipe</a></li>
         </ul>
     </nav>
-    <form name="publishRecipe" method="post">
+    <div class="form-title">
+        <h1 class="recipe-title">Publish your own recipe</h1>
+    </div>
+    <form name="publishRecipeForm" onsubmit="return validate()" method="post" class="recipe-form">
+        <label for="dish" class="recipe-input">Dish</label>
+        <input name="dish" id="dish" type="text" class="recipe-input"><br>
 
+        <label for="cook" class="recipe-input">Cook</label>
+        <input name="cook" id="cook" type="text" class="recipe-input"><br>
+
+        <label for="ingredients" class="recipe-input">Ingredients</label><br>
+        <textarea name="ingredients" id="ingredients" rows="10" cols="30" class="recipe-input"></textarea><br>
+
+        <label for="instructions">Instructions</label><br>
+        <textarea name="instructions" id="instructions" rows="20" cols="30" class="recipe-input"></textarea><br>
+
+        <label for="photo">Photo</label>
+        <input type="file" name="photo" id="photo">
+        
+        <button type="submit" class="recipe-submit">Publish</button>
     </form>
     <footer>
         <p>2019, Dimitar & Evgeniy ©</p>

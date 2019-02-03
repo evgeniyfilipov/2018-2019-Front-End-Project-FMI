@@ -1,5 +1,5 @@
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+body {font-family: Metropolis, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -114,12 +114,13 @@ ul {
     display: block;
     color: white;
     text-align: center;
+    font-weight: bold;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover {
-    background-color: #111;
+    background-color: #00D4B8;
   }
 
   
@@ -132,6 +133,16 @@ ul {
     background-color: #00AB9A;
     color: white;
     text-align: center;
+    font-weight: bold;
+ }
+
+ h1 {
+   color: #313131;
+   margin-left: 1rem;
+ }
+
+ .active {
+   background-color: #00D4B8;
  }
 
 
