@@ -5,7 +5,7 @@ let localData = [];
 
 function fetchData() {
     const URL = 'https://api.myjson.com/bins/1dipcs';
-    fetch(URL).then(response => {
+    return fetch(URL).then(response => {
         if (response.ok) {
             return response.json();
         }

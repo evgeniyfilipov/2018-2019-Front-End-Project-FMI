@@ -19,26 +19,50 @@
     <div class="form-title">
         <h1 class="title">Publish your own recipe</h1>
     </div>
-    <form name="publishRecipeForm" onsubmit="return add()" method="post" class="recipe-form">
-        <label for="dish" class="recipe-input">Dish</label>
-        <input name="dish" id="dish" type="text" class="recipe-input"><br>
-
-        <label for="cook" class="recipe-input">Cook</label>
-        <input name="cook" id="cook" type="text" class="recipe-input"><br>
-
-        <label for="ingredients" class="recipe-input">Ingredients</label><br>
-        <textarea name="ingredients" id="ingredients" rows="10" cols="30" class="recipe-input"></textarea><br>
-
-        <label for="instructions">Instructions</label><br>
-        <textarea name="instructions" id="instructions" rows="20" cols="30" class="recipe-input"></textarea><br>
-
-        <label for="photo">Photo</label>
-        <input type="file" name="photo" id="photo" class="recipe-upload">
-        
-        <button type="submit" class="recipe-submit">Publish</button>
-    </form>
+    <div class="container">
+        <form name="publishRecipeForm" onsubmit="return add()" method="post">
+            <div class="row">
+                <div class="col-25">
+                    <label for="dish">Dish</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="dish" name="dish">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="cook">Cook</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="cook" name="cook">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="ingredients">Ingredients</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="ingredients" name="ingredients"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="instructions">Instructions</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="instructions" name="instructions"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="file">
+            </div>
+            <div class="row">
+                <input type="submit" value="Publish">
+            </div>
+        </form>
+    </div>
     <footer>
-        <p>2019, Dimitar & Evgeniy ©</p>
+        <h6>2019, Dimitar & Evgeniy ©</h6>
     </footer>
 </body>
 

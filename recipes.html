@@ -4,6 +4,7 @@
 <head>
     <title>Dimitar & Evgeniy - Recipes</title>
     <script type="text/JavaScript" src="./scripts/data.js"></script>
+    <script type="text/JavaScript" src="./scripts//main.js"></script>
     <link rel="stylesheet" type="text/css" href="../2018-2019-Front-End-Project-FMI/styles/index.css">
     <link rel="stylesheet" type="text/css" href="../2018-2019-Front-End-Project-FMI/styles/recipes.css">
 </head>
@@ -19,9 +20,39 @@
     <div class="recipes-title">
         <h1 class="title">Recipes</h1>
     </div>
-    <button onclick="fetchData()">DSDASS</button>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <a href="./cremebrulee.html">
+                    <div class="card" id="cremebrulee-card" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
+                        <img src="resources/cremebrulee.jpg" />
+                        <h3>Creme Brulee</h3>
+                        <p>Ivan Ivanov</p>
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="./cremecaramel.html">
+                    <div class="card" id="cremecaramel-card" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
+                        <img src="resources/cremecaramel.jpg" />
+                        <h3>Creme Brulee</h3>
+                        <p>Amy Smith</p>
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="./lasagne.html">
+                    <div class="card" id="lasagne-id" onmouseover="addShadow(this)" onmouseout="removeShadow(this)">
+                        <img src="resources/lasagne.jpg" />
+                        <h3>Creme Brulee</h3>
+                        <p>John Smit</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>2019, Dimitar & Evgeniy ©</p>
+        <h6>2019, Dimitar & Evgeniy ©</h6>
     </footer>
 </body>
 
